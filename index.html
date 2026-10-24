@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff4f7">
+<title>for my maalkin ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Sacramento&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#f4b9cc;--pink2:#ffe0e9;--rose:#c96e8c;--ink:#59414d;--cream:#fffaf5;--lav:#eee7ff;--lilac:#b6a0db;--green:#dfe9d9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:'DM Sans',sans-serif;background-color:#fff7f7;background-image:radial-gradient(#edc7d4 1px,transparent 1px),linear-gradient(135deg,#fff8f6,#fff0f5 50%,#f5f0ff);background-size:18px 18px,100% 100%;overflow-x:hidden}
+button{font:inherit;cursor:pointer;border:0}
+button:focus-visible{outline:3px solid #aa80c7;outline-offset:4px}
+.page{min-height:100vh;display:none;align-items:center;justify-content:center;padding:30px 16px;position:relative;animation:arrive .55s ease both}
+.page.active{display:flex}
+@keyframes arrive{from{opacity:0;transform:translateY(12px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+.paper{width:min(100%,650px);position:relative;background:rgba(255,253,250,.88);border:1px solid rgba(222,166,189,.65);border-radius:28px;padding:clamp(25px,6vw,48px);box-shadow:0 18px 60px #c78ba51c,0 4px 15px #9f73951a;text-align:center;backdrop-filter:blur(8px)}
+.paper:before{content:"";position:absolute;inset:8px;border:1px dashed #e9bfd0;border-radius:21px;pointer-events:none}
+.paper>*{position:relative}
+.corner{position:absolute!important;font-size:27px;line-height:1;filter:drop-shadow(0 3px 3px #d6a1b344);z-index:2}
+.c1{top:-11px;left:24px;transform:rotate(-15deg)}.c2{top:-12px;right:25px;transform:rotate(16deg)}.c3{bottom:-10px;right:31px;transform:rotate(9deg)}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#b77891;font-weight:700;margin:5px 0 15px}
+h1,h2{font-family:'Playfair Display',serif;font-weight:600;line-height:1.12;margin:0 0 15px}
+h1{font-size:clamp(36px,8vw,62px)}h2{font-size:clamp(29px,6vw,43px)}
+.script{font-family:'Sacramento',cursive;color:#c46f91;font-size:clamp(34px,7vw,48px);line-height:1.1}
+p{font-size:15px;line-height:1.8;color:#806976;margin:10px auto;max-width:470px}
+.bow{font-size:clamp(44px,10vw,68px);display:block;line-height:1;margin:6px auto 20px;filter:drop-shadow(0 5px 4px #d18fa033);animation:float 3.3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-6px) rotate(2deg)}}
+.sticker{display:inline-flex;align-items:center;gap:7px;border:1px solid #f0cfdb;background:#fff0f5;padding:8px 14px;border-radius:999px;color:#ad6b85;font-size:12px;margin:8px 4px}
+.actions{display:flex;gap:11px;justify-content:center;flex-wrap:wrap;margin-top:25px}
+.btn{padding:13px 21px;border-radius:999px;background:#d889a5;color:white;box-shadow:0 5px 0 #bd6d8a,0 8px 17px #d28ba433;transition:transform .18s,box-shadow .18s;font-weight:700;font-size:13px;letter-spacing:.02em}
+.btn:hover{transform:translateY(-2px);box-shadow:0 7px 0 #bd6d8a,0 11px 19px #d28ba433}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #bd6d8a}
+.btn.secondary{background:#f1eaff;color:#806b9b;box-shadow:0 5px 0 #d5c7ee,0 8px 17px #b7a4d333}
+.btn.secondary:hover{box-shadow:0 7px 0 #d5c7ee,0 11px 19px #b7a4d333}
+.tiny{font-size:11px;color:#b395a5;margin-top:20px}
+.progress{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:6px;background:#fffaf3d9;border:1px solid #f0d5df;border-radius:999px;padding:7px 10px;backdrop-filter:blur(10px)}
+.dot{width:7px;height:7px;border-radius:50%;background:#e7c9d6;transition:.3s}.dot.on{background:#c46f91;transform:scale(1.25)}
+.floating{position:fixed;pointer-events:none;z-index:0;opacity:.7;animation:drift 7s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-15px) rotate(8deg)}}
+.float1{top:14%;left:5%;font-size:25px}.float2{right:6%;top:24%;font-size:21px;animation-delay:1s}.float3{left:8%;bottom:14%;font-size:23px;animation-delay:2s}.float4{right:8%;bottom:10%;font-size:27px;animation-delay:1.5s}
+.question{font-family:'Playfair Display',serif;font-size:clamp(23px,5vw,31px);line-height:1.35;margin:12px auto 8px;max-width:480px}
+.answer-area{min-height:62px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.answer{min-width:105px;padding:12px 19px;border-radius:15px;border:1px solid #edc6d5;background:#fff4f7;color:#9d5e78;font-weight:700;box-shadow:0 4px 0 #efd8e1;transition:.18s}
+.answer.yes{background:#d98ca8;color:white;border-color:#d98ca8;box-shadow:0 4px 0 #bd6d8a}
+.answer:hover{transform:translateY(-2px) rotate(-1deg)}
+.no-taunt{min-height:22px;font-size:12px;color:#b16b87;margin-top:15px}
+.balloon-grid{display:grid;grid-template-columns:repeat(3,minmax(75px,1fr));gap:13px;margin:27px auto 8px;max-width:390px}
+.balloon{position:relative;min-height:105px;border-radius:50% 50% 47% 47%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:inset -8px -9px 0 #ffffff38, inset 6px 5px 0 #ffffff5c,0 9px 12px #a9778c1a;transition:transform .3s;animation:float 3s ease-in-out infinite}
+.balloon:after{content:"";position:absolute;width:1px;height:24px;background:#d8b2c2;bottom:-24px;left:50%}
+.balloon:nth-child(3n+1){background:#f3b6ca}.balloon:nth-child(3n+2){background:#d9cdf8;animation-delay:.5s}.balloon:nth-child(3n){background:#f8d8b8;animation-delay:1s}
+.balloon.popped{transform:scale(.05) rotate(30deg);opacity:0;pointer-events:none}
+.compliment{min-height:44px;margin:18px auto 0;color:#a85f7e;font-family:'Playfair Display',serif;font-size:19px;font-style:italic}
+.quiz-card{background:#fff7fb;border:1px solid #efd3e0;border-radius:19px;padding:20px;margin:19px auto;max-width:440px}
+.quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
+.quiz-opt{padding:12px 9px;border-radius:13px;background:#f0e9ff;border:1px solid #e0d4f6;color:#78638f;font-size:12px;font-weight:700}
+.quiz-opt:nth-child(even){background:#fff0f5;border-color:#f2d2de;color:#a5627d}
+.quiz-opt:hover{transform:translateY(-2px)}
+.bouquet{font-size:clamp(74px,18vw,120px);line-height:1.2;filter:drop-shadow(0 10px 8px #9e758022);margin:12px auto;animation:float 4s ease-in-out infinite}
+.flower-note{display:inline-block;background:#f8edf8;border:1px solid #e7d7ec;padding:12px 17px;border-radius:15px;font-size:12px;color:#8b739c;margin:8px}
+.letter{text-align:left;max-width:470px;margin:22px auto 0;padding:22px 22px 17px;background:#fff8f3;border:1px solid #f0d7d5;border-radius:5px 20px 8px 18px;box-shadow:3px 4px 0 #f3e5e3;transform:rotate(-.4deg)}
+.letter p{overflow-wrap:anywhere;font-family:'Playfair Display',serif;font-size:15px;color:#7b626c;line-height:1.95;margin:0 0 14px}
+.letter .sign{font-family:'Sacramento',cursive;color:#c46f91;font-size:32px;text-align:right;margin:10px 0 0}
+.final-stickers{font-size:26px;letter-spacing:8px;margin:18px 0}
+#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+.music-note{position:fixed;bottom:14px;right:14px;z-index:25;background:#fffaf0;border:1px solid #f0d4df;color:#a36b84;border-radius:999px;padding:10px 13px;font-size:11px;box-shadow:0 5px 15px #8b58721c}
+.music-modal{display:none;position:fixed;inset:0;z-index:80;background:#5d405dcc;backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:18px}
+.music-modal.open{display:flex}
+.music-modal-card{position:relative;width:min(100%,520px);background:#fffaf6;border:1px solid #eac5d4;border-radius:25px;padding:30px 22px;box-shadow:0 20px 70px #38212c55;text-align:center}
+.music-close{position:absolute;right:13px;top:10px;width:34px;height:34px;border-radius:50%;background:#f8e8ef;color:#a36380;font-size:24px}
+.youtube-frame{width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:14px;border:1px solid #ead0dd;background:#f4e6ef;margin:15px auto}
+.youtube-frame iframe{width:100%;height:100%;border:0}
+@media(max-width:520px){.page{padding:35px 13px}.paper{padding:30px 21px}.float1{left:2%;top:10%}.float2{right:2%;top:17%}.float3{left:3%;bottom:7%}.float4{right:3%;bottom:7%}.balloon-grid{gap:10px}.balloon{min-height:83px}.letter{padding:18px}.progress{top:9px}}
+</style>
+</head>
+<body>
+<div class="progress" aria-label="surprise progress"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="floating float1">୨୧</div><div class="floating float2">✧</div><div class="floating float3">♡</div><div class="floating float4">🎀</div>
+<canvas id="confetti"></canvas>
+<audio id="birthdayAudio" src="birthday-song.mp3" preload="auto" loop playsinline></audio>
+<button class="music-note" id="musicToggle" type="button" onclick="toggleMusic()">♫ play birthday song</button>
+
+<section class="page active" id="p0">
+ <div class="paper"><span class="corner c1">🎀</span><span class="corner c2">✿</span><span class="corner c3">♡</span>
+  <span class="bow">🎀</span><div class="kicker">a tiny little surprise · made with love</div>
+  <h1>for my<br><span class="script">Maalkin</span> ♡</h1>
+  <p>A little corner of the internet, made especially for you — because one ordinary birthday wish simply wasn't enough.</p>
+  <div class="sticker">౨ৎ birthday girl energy</div><div class="sticker">♡ certified favourite</div>
+  <div class="actions"><button class="btn" onclick="startSurprise()">open your little gift ✧</button></div>
+  <div class="tiny">best experienced with sound on · made just for you</div>
+ </div>
+</section>
+
+<section class="page" id="p1">
+ <div class="paper"><span class="corner c1">♡</span><span class="corner c2">🎀</span>
+  <div class="kicker">before we continue…</div><span class="bow">૮ ˶ᵔ ᵕ ᵔ˶ ა</span>
+  <div class="question">Am I your biggest headache?</div>
+  <p>think carefully, ma’am. this is a very serious and extremely scientific survey.</p>
+  <div class="answer-area"><button class="answer yes" onclick="answerHeadache()">YES, obviously</button><button class="answer" id="noBtn" onmouseenter="runAway()" onclick="runAway()">NO, never</button></div>
+  <div class="no-taunt" id="taunt">choose wisely, your honour 🎀</div>
+  <div class="tiny">there is only one acceptable answer (˶ᵔ ᵕ ᵔ˶)</div>
+ </div>
+</section>
+
+<section class="page" id="p2">
+ <div class="paper"><span class="corner c1">✧</span><span class="corner c2">🎀</span>
+  <div class="kicker">pop pop, little love notes</div><h2>A few things<br><span class="script">you should know</span></h2>
+  <p>pop every balloon to unlock your tiny compliments. yes, you have to accept them. no returns.</p>
+  <div class="balloon-grid" id="balloons"></div>
+  <div class="compliment" id="compliment">pick a balloon, birthday girl ♡</div>
+  <div class="tiny" id="balloonCount">0 of 6 popped</div>
+ </div>
+</section>
+
+<section class="page" id="p3">
+ <div class="paper"><span class="corner c1">🎀</span><span class="corner c2">✿</span>
+  <div class="kicker">a very important personality test</div><h2>How well do you<br><span class="script">know your fan club?</span></h2>
+  <p>four tiny questions. zero pressure. your reputation is absolutely on the line.</p>
+  <div class="quiz-card" id="quizCard"><div class="kicker" id="quizNum">question 01 / 04</div><div class="question" id="quizQuestion">What is your most powerful talent?</div><div class="quiz-options" id="quizOptions"></div></div>
+  <div class="tiny" id="quizFeedback">the examiner is very easily impressed ♡</div>
+ </div>
+</section>
+
+<section class="page" id="p4">
+ <div class="paper"><span class="corner c1">🌷</span><span class="corner c2">🎀</span>
+  <div class="kicker">delivered with a little extra love</div><h2>A bouquet for<br><span class="script">the birthday girl</span></h2>
+  <div class="bouquet">💐</div>
+  <p>For all the times you make a day feel lighter, a room feel warmer, and ordinary moments feel like little stories worth keeping.</p>
+  <div class="flower-note">🌸 one flower for every reason you're appreciated</div>
+  <div class="flower-note">🎀 wrapped in the softest pink</div>
+  <div class="actions"><button class="btn" onclick="go(5)">there's a letter for you ♡</button></div>
+ </div>
+</section>
+
+<section class="page" id="p5">
+ <div class="paper"><span class="corner c1">♡</span><span class="corner c2">🎀</span>
+  <div class="kicker">a little note, from me to you</div><h2>Dear <span class="script">Maalkin</span>,</h2>
+  <div class="letter">
+   <!-- EDIT YOUR LETTER: change the words inside each <p>...</p>, but keep the p tags. -->
+   <p><strong>To my favourite Maalkin, 🎀❤️</strong></p>
+   <p>First of all, really sorry agr yeh website thodi unhinged ya irritating lage 😭 but as a full-stack web developer and a computer programming student, apne special person ko special treatment dena toh farz bnta hai na? 🤷🏻‍♂️💗 Toh socha iss baar sirf wish karke kaam naa chlaun; instead thoda time, effort aur coding skills lga kr kuch special bnakr de dun. Ab itni mehnat ke baad thoda irritate krne ka haq toh bnta h mera 🤭🎀</p>
+   <p><strong>Jokes aside, wishing a very Happiest Birthday to one of my favourite person ever! 🥹❤️</strong></p>
+   <p>I honestly don't think I can ever explain how grateful I am to have u in my life. Thank you for being there for me, for all the little moments, the random conversations, the laughter, the teasing, and all those memories that became so special without us even realising it at the time.</p>
+   <p>Looking back, I feel so lucky that I got to share those days with u. The simplest things felt so much more fun because u were a part of them. And honestly, I miss those days, those moments, and being around u more than I can put into words. 🥹❤️ I wish we could relive some of those memories once in a while, even if just for a day.</p>
+   <p>But more than anything, I'm thankful for having u in my life. For the person u are, for the happiness u've brought into my life, and for all the moments that I'll always look back on with a smile. u might not even realise how much some of those little things mean to me, but they really do. 🫶🏻</p>
+   <p>On your birthday, I wish u all the happiness this world has to offer. I hope you achieve everything u've ever dreamed of, find reasons to smile even on the hardest days, and always feel loved, appreciated, and proud of the person u're becoming. u deserve the most beautiful things in ur life, Maalkin, and I genuinely hope life gives u plenty of them. ❤️</p>
+   <p>And haan, no matter how busy life gets, I hope we keep making more memories, having our stupid little conversations, teasing each other, and finding reasons to laugh together.</p>
+   <p>At last, just wanna remind u that I miss you so much, and I love you loads. Thank you for being you, and thank you for being such a beautiful part of my life. 🥹❤️</p>
+   <p><strong>Happiest Birthday once again, Maalkin! 🎂🎀</strong> May this year bring you endless happiness, love, success, and everything your heart wishes for.</p>
+   <p><strong>P.S.</strong> Itna effort kiya hai, toh appreciation mein ek extra smile toh bnti hai. Complaints aap mujhe msg pr bta skte h (woh alag baat h ki bade mahino se aapka woh pyaara thappad ni khaaya peeth pr, do kabhi mauka....) jokes aside, enjoy ur day to the fullest, sweetie 💗</p>
+   <p><em>With lots of love,</em><br><strong>Your favourite troublemaker nd headache. 🫶🏻❤️</strong> 💗</p>
+   <!-- END OF EDITABLE LETTER -->
+  </div>
+  <div class="actions"><button class="btn" onclick="finish()">one last little thing ✧</button></div>
+ </div>
+</section>
+
+<section class="page" id="p6">
+ <div class="paper"><span class="corner c1">🎀</span><span class="corner c2">♡</span><span class="corner c3">✿</span>
+  <span class="bow">🎀</span><div class="kicker">the end of this tiny internet hug</div>
+  <h1>Happy Birthday,<br><span class="script">Maalkin!</span></h1>
+  <div class="final-stickers">♡ ✿ ୨୧ ✧ 🌷</div>
+  <p>May your year be soft, sparkly, full of good surprises, and just a little bit iconic — exactly like you.</p>
+  <p style="font-family:'Playfair Display',serif;font-style:italic;color:#b87993">you are loved more than this little website can fit. ♡</p>
+  <div class="actions"><button class="btn" onclick="celebrateAgain()">more confetti please ✨</button><button class="btn secondary" onclick="go(0)">replay our little story ↺</button></div>
+ </div>
+</section>
+
+<script>
+const pages=[...document.querySelectorAll('.page')], dots=[...document.querySelectorAll('.dot')];
+let current=0, popped=0, quizIndex=0, quizTimer=null, noCount=0, musicOn=false;
+const noLines=["nice try 😭 the NO button has resigned","no is not in the syllabus, ma’am 🎀","that button has places to be… away from you","the website said: absolutely not ✋","caught you trying to escape the truth","respectfully, that answer is unavailable ୨୧","even the button knows you're lying","I built this. I know your tricks 😌"];
+function go(n){pages[current].classList.remove('active');current=n;pages[current].classList.add('active');dots.forEach((d,i)=>d.classList.toggle('on',i===Math.min(n,5)));window.scrollTo({top:0,behavior:'smooth'});}
+function startSurprise(){go(1);startMusic();}
+function runAway(){const b=document.getElementById('noBtn');noCount++;document.getElementById('taunt').textContent=noLines[(noCount-1)%noLines.length];const area=b.parentElement;const maxX=Math.max(0,area.clientWidth-b.offsetWidth);b.style.transform=`translate(${Math.round((Math.random()-.5)*Math.min(120,maxX+70))}px,${Math.round((Math.random()-.5)*22)}px) rotate(${Math.round((Math.random()-.5)*12)}deg)`;b.style.background=['#f4d7e3','#f0e8ff','#ffe9d7'][noCount%3];}
+function answerHeadache(){document.getElementById('taunt').textContent="correct answer. you're learning 😌 ♡";setTimeout(()=>{buildBalloons();go(2)},700);}
+const compliments=["you make ordinary moments feel special ♡","your presence is genuinely comforting","you deserve the softest kind of happiness","you have your own kind of magic ✧","the world is better with you in it","you are allowed to be proud of yourself 🎀"];
+function buildBalloons(){const wrap=document.getElementById('balloons');wrap.innerHTML='';popped=0;document.getElementById('balloonCount').textContent='0 of 6 popped';document.getElementById('compliment').textContent='pick a balloon, birthday girl ♡';compliments.forEach((c,i)=>{let b=document.createElement('button');b.className='balloon';b.setAttribute('aria-label','pop balloon');b.textContent=['♡','✿','୨୧','✧','♥','🌷'][i];b.style.animationDelay=(i*.22)+'s';b.onclick=()=>{if(b.classList.contains('popped'))return;b.classList.add('popped');document.getElementById('compliment').textContent=c;popped++;document.getElementById('balloonCount').textContent=`${popped} of 6 popped`;if(popped===6){document.getElementById('compliment').textContent='all popped! your compliment collection is complete ♡';setTimeout(()=>{buildQuiz();go(3)},1400)}};wrap.appendChild(b);});}
+const quiz=[
+ {q:"What is your most powerful talent?",opts:["Being effortlessly iconic","Making everyone laugh","Being a little dramatic","All of the above, obviously"],correct:3,feedback:"correct. the confidence is deserved ✧"},
+ {q:"What should your birthday come with?",opts:["A crown, please","Unlimited cake","A full day of compliments","All of the above 🎀"],correct:3,feedback:"a very reasonable wish list, actually."},
+ {q:"What kind of year are we manifesting?",opts:["Peace & pretty days","Big wins & soft moments","Lots of love","EVERY GOOD THING ♡"],correct:3,feedback:"the universe has received your memo."},
+ {q:"Final question: are you appreciated?",opts:["Maybe a little","On special occasions","More than you know ♡","I demand evidence"],correct:2,feedback:"evidence incoming… in bouquet form 🌷"}
+];
+function buildQuiz(){quizIndex=0;showQuiz();}
+function showQuiz(){const q=quiz[quizIndex];document.getElementById('quizNum').textContent=`question ${String(quizIndex+1).padStart(2,'0')} / 04`;document.getElementById('quizQuestion').textContent=q.q;document.getElementById('quizFeedback').textContent='the examiner is very easily impressed ♡';const opts=document.getElementById('quizOptions');opts.innerHTML='';q.opts.forEach((o,i)=>{const b=document.createElement('button');b.className='quiz-opt';b.textContent=o;b.onclick=()=>{if(opts.dataset.answered)return;opts.dataset.answered='1';document.getElementById('quizFeedback').textContent=(i===q.correct?q.feedback:["bold choice, birthday girl ♡","interesting theory…","the jury is still cute about it","points for confidence 🎀"][i%4]);[...opts.children].forEach(x=>x.style.opacity='.6');b.style.opacity='1';b.style.outline='2px solid #d18aa6';setTimeout(()=>{quizIndex++;if(quizIndex<quiz.length)showQuiz();else{document.getElementById('quizQuestion').textContent='Result: certified birthday royalty 👑';opts.innerHTML='<div style="grid-column:1/-1;color:#b56c8a;font-family:Playfair Display,serif;font-size:20px;padding:10px">100% iconic. zero notes. ♡</div>';document.getElementById('quizFeedback').textContent='your prize is waiting…';setTimeout(()=>go(4),1500)}},1150)};opts.appendChild(b)});document.getElementById('quizOptions').dataset.answered='';}
+function finish(){go(6);confettiBurst();}
+function celebrateAgain(){confettiBurst();}
+function confettiBurst(){const canvas=document.getElementById('confetti'),ctx=canvas.getContext('2d');canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.scale(devicePixelRatio,devicePixelRatio);const bits=Array.from({length:145},()=>({x:Math.random()*innerWidth,y:-Math.random()*innerHeight*.7,w:4+Math.random()*6,h:5+Math.random()*9,v:1.5+Math.random()*4,r:Math.random()*6,vr:(Math.random()-.5)*.15,c:['#f2a9c3','#d9c8f4','#f9d7a9','#c8dfc2','#fff1f6'][Math.floor(Math.random()*5)]}));let frame=0;function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);bits.forEach(b=>{ctx.save();ctx.translate(b.x,b.y);ctx.rotate(b.r);ctx.fillStyle=b.c;ctx.fillRect(-b.w/2,-b.h/2,b.w,b.h);ctx.restore();b.y+=b.v;b.x+=Math.sin(b.y/35)*1.1;b.r+=b.vr});frame++;if(frame<230)requestAnimationFrame(draw);else ctx.clearRect(0,0,innerWidth,innerHeight)}draw();}
+function startMusic(){const audio=document.getElementById('birthdayAudio');audio.play().then(()=>{musicOn=true;updateMusic();}).catch(()=>{musicOn=false;document.getElementById('musicToggle').textContent='♫ tap here to play';});}
+function toggleMusic(){const audio=document.getElementById('birthdayAudio');if(audio.paused){audio.play().then(()=>{musicOn=true;updateMusic();}).catch(()=>{musicOn=false;document.getElementById('musicToggle').textContent='♫ tap here to play';alert('Bhai, please extract the ZIP first and keep index.html and birthday-song.mp3 together, then tap this music button again 🎀');});}else{audio.pause();musicOn=false;updateMusic();}}
+function updateMusic(){document.getElementById('musicToggle').textContent=musicOn?'♫ pause birthday song':'♫ play birthday song';}
+window.addEventListener('resize',()=>{const c=document.getElementById('confetti');c.width=innerWidth*devicePixelRatio;c.height=innerHeight*devicePixelRatio;});
+</script>
+</body>
+</html>
